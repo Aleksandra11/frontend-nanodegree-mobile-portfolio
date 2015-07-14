@@ -1,0 +1,25 @@
+{
+  "name": "frontend-nanodegree-mobile-portfolio",
+  "version": "1.0.0",
+  "description": "http://aleksandra11.github.io/frontend-nanodegree-mobile-portfolio/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aleksandra11/frontend-nanodegree-mobile-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aleksandra11/frontend-nanodegree-mobile-portfolio/issues"
+  },
+  "homepage": "https://github.com/Aleksandra11/frontend-nanodegree-mobile-portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0"
+  }
+}
