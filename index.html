@@ -7,11 +7,12 @@
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
 
-    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <!-- Hmm, what is the impact of web fonts on speed? Measure it...
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">-->
+    <!--<link href="css/style.min.css" rel="stylesheet">-->
     <link href="css/print.min.css" rel="stylesheet" media = "print">
-    <!--<script type="text/javascript">
+    
+    <script type="text/javascript">
       WebFontConfig = {
         google: { families: [ 'Open+Sans:400,700:latin' ] }
       };
@@ -24,7 +25,7 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
       })();
-    </script>-->
+    </script>
     <script>
       (function(w,g){w['GoogleAnalyticsObject']=g;
       w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
@@ -33,6 +34,17 @@
       ga('create', 'UA-XXXX-Y');
       ga('send', 'pageview');
     </script>
+    <script>     
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'css/style.min.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>    
     <script  async src="http://www.google-analytics.com/analytics.js"></script>
     <script async src="js/perfmatters.min.js"></script>
   </head>
