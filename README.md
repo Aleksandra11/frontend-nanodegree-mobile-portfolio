@@ -1,4 +1,25 @@
-http://aleksandra11.github.io/frontend-nanodegree-mobile-portfolio/
+Outlines optimizations for pagespeed (index.html):
+
+Compressed images
+Optimized CSS delivery by inlining css
+Used media query for print.css so that it doesn't have to load except when printing
+Used async attribute in script tag for analytics and perfmatters.js
+
+Optimizations for FPS :
+
+Changed the slider value to a percent width in changePizzaSizes function
+Moved some variables outside loop so that they don't have to be calculated everytime
+Made changes for updatePositions and scroll to prevent
+Minified javascript
+Added will-change and backface CSS property to .mover to increase the responsiveness of a page
+
+Resources used:
+
+gulp to minify css, js and images
+Pagespeed Insights
+https://www.udacity.com/course/ud884
+
+To view live version go to http://
 
 
 ## Website Performance Optimization portfolio project
