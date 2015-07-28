@@ -19,7 +19,7 @@ gulp to minify css, js and images
 Pagespeed Insights
 https://www.udacity.com/course/ud884
 
-To view live version go to http://
+To view live version go to http://Aleksandra11.github.io/frontend-nanodegree-mobile-portfolio
 
 
 ## Website Performance Optimization portfolio project
