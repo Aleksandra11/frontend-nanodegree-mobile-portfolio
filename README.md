@@ -1,4 +1,5 @@
 ## Website Performance Optimization portfolio project
+==================================================
 
 Part 1. Outlines optimizations for pagespeed (index.html):
 ----------------------------------------------------
@@ -10,24 +11,27 @@ Part 1. Outlines optimizations for pagespeed (index.html):
 * Used the Gulp build tool to concatenate and minify .css and .js files.
 * Changed loading of google font to WebFont loader.
 
-### To run the application **go to [Pagespeed Insights](http://https://developers.google.com/speed/pagespeed/insights).**
-                          **Insert http://aleksandra11.github.io/frontend-nanodegree-mobile-portfolio/ and click analyze button.
+### To run the application 
++ go to [Pagespeed Insights](http://https://developers.google.com/speed/pagespeed/insights).
++ Insert http://aleksandra11.github.io/frontend-nanodegree-mobile-portfolio/ and click analyze button.
 
 Part 2. Optimizations for FPS :
 ----------------------------------------------------------------------------------------------------------
 The following changes where made to fix the low FPS and produce a consistent 60FPS frame rate when scrolling the page:
->
-> Changed the slider value to a percent width in changePizzaSizes function
-> Optimized the loops contained in the updatePositions function and the onDOMContentLoaded event handler (Moved some variables outside loop so that they don't have to be calculated everytime)
-> Reduced the amount of sliding pizza elements generated from 200 down to 30, which still sufficiently fills the screen with sliding pizzas.
-> Resized the pizza image
-> Added will-change and backface-visibility CSS property to .mover class to increase the responsiveness of a page
+
++ Changed the slider value to a percent width in changePizzaSizes function
++ Optimized the loops contained in the updatePositions function and the onDOMContentLoaded event handler (Moved some variables outside loop so that they don't have to be calculated everytime)
++ Reduced the amount of sliding pizza elements generated from 200 down to 30, which still sufficiently fills the screen with sliding pizzas.
++ Resized the pizza image
++ Added will-change and backface-visibility CSS property to .mover class to increase the responsiveness of a page
 
 
 ### Resources used:
 
 Gulp to minify css, js and images
+
 Pagespeed Insights [Pagespeed Insights](http://https://developers.google.com/speed/pagespeed/insights).
+
 [Udacity](https://www.udacity.com/course/ud884).
 
 **To view live version go to** http://aleksandra11.github.io/frontend-nanodegree-mobile-portfolio/
