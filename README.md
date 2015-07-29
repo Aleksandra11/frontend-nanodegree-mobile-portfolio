@@ -15,9 +15,9 @@ Part 1. Outlines optimizations for pagespeed (index.html):
 + go to [Pagespeed Insights](http://https://developers.google.com/speed/pagespeed/insights).
 + Insert http://aleksandra11.github.io/frontend-nanodegree-mobile-portfolio/ and click analyze button.
 
-Part 2. Optimizations for FPS :
+Part 2. Optimizations for FPS (pizza.html):
 ----------------------------------------------------------------------------------------------------------
-The following changes where made to fix the low FPS and produce a consistent 60FPS frame rate when scrolling the page:
+The following changes where made to fix the low FPS and produce a consistent 60FPS frame rate when scrolling the page and reduce time to resize pizzas less than 5ms:
 
 + Changed the slider value to a percent width in changePizzaSizes function
 + Optimized the loops contained in the updatePositions function and the onDOMContentLoaded event handler (Moved some variables outside loop so that they don't have to be calculated everytime)
@@ -28,7 +28,7 @@ The following changes where made to fix the low FPS and produce a consistent 60F
 
 ### Resources used:
 
-Gulp to minify css, js and images
+[Gulp](https://www.npmjs.com/package/gulp) to minify css, js and images
 
 Pagespeed Insights [Pagespeed Insights](http://developers.google.com/speed/pagespeed/insights).
 
