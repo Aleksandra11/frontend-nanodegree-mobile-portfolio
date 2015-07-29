@@ -30,7 +30,7 @@ The following changes where made to fix the low FPS and produce a consistent 60F
 
 Gulp to minify css, js and images
 
-Pagespeed Insights [Pagespeed Insights](http://https://developers.google.com/speed/pagespeed/insights).
+Pagespeed Insights [Pagespeed Insights](http://developers.google.com/speed/pagespeed/insights).
 
 [Udacity](https://www.udacity.com/course/ud884).
 
