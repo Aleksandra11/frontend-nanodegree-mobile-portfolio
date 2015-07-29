@@ -1,64 +1,38 @@
-Outlines optimizations for pagespeed (index.html):
-
-Compressed images
-Optimized CSS delivery by inlining css
-Used media query for print.css so that it doesn't have to load except when printing
-Used async attribute in script tag for analytics and perfmatters.js
-
-Optimizations for FPS :
-
-Changed the slider value to a percent width in changePizzaSizes function
-Moved some variables outside loop so that they don't have to be calculated everytime
-Made changes for updatePositions and scroll to prevent
-Minified javascript
-Added will-change and backface CSS property to .mover to increase the responsiveness of a page
-
-Resources used:
-
-gulp to minify css, js and images
-Pagespeed Insights
-https://www.udacity.com/course/ud884
-
-To view live version go to http://
-
-
 ## Website Performance Optimization portfolio project
 
-Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
+Part 1. Outlines optimizations for pagespeed (index.html):
+----------------------------------------------------
 
-To get started, check out the repository, inspect the code,
+* Resized images that were too large and compressed all images
+* Optimized CSS delivery by inlining css to the head of the document
+* Used media query for print.css so that it doesn't have to load except when printing
+* Used async attribute in script tag for analytics and perfmatters.js
+* Used the Gulp build tool to concatenate and minify .css and .js files.
+* Changed loading of google font to WebFont loader.
 
-### Getting started
+### To run the application **go to [Pagespeed Insights](http://https://developers.google.com/speed/pagespeed/insights).**
+                          **Insert http://aleksandra11.github.io/frontend-nanodegree-mobile-portfolio/ and click analyze button.
 
-####Part 1: Optimize PageSpeed Insights score for index.html
+Part 2. Optimizations for FPS :
+----------------------------------------------------------------------------------------------------------
+The following changes where made to fix the low FPS and produce a consistent 60FPS frame rate when scrolling the page:
+>
+> Changed the slider value to a percent width in changePizzaSizes function
+> Optimized the loops contained in the updatePositions function and the onDOMContentLoaded event handler (Moved some variables outside loop so that they don't have to be calculated everytime)
+> Reduced the amount of sliding pizza elements generated from 200 down to 30, which still sufficiently fills the screen with sliding pizzas.
+> Resized the pizza image
+> Added will-change and backface-visibility CSS property to .mover class to increase the responsiveness of a page
 
-Some useful tips to help you get started:
 
-1. Check out the repository
-1. To inspect the site on your phone, you can run a local server
+### Resources used:
 
-  ```bash
-  $> cd /path/to/your-project-folder
-  $> python -m SimpleHTTPServer 8080
-  ```
+Gulp to minify css, js and images
+Pagespeed Insights [Pagespeed Insights](http://https://developers.google.com/speed/pagespeed/insights).
+[Udacity](https://www.udacity.com/course/ud884).
 
-1. Open a browser and visit localhost:8080
-1. Download and install [ngrok](https://ngrok.com/) to make your local server accessible remotely.
+**To view live version go to** http://aleksandra11.github.io/frontend-nanodegree-mobile-portfolio/
 
-  ``` bash
-  $> cd /path/to/your-project-folder
-  $> ngrok 8080
-  ```
 
-1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! Optional: [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
-
-Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
-
-####Part 2: Optimize Frames per Second in pizza.html
-
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
-
-You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
 ### Optimization Tips and Tricks
 * [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
