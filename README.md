@@ -13,7 +13,7 @@ Part 1. Outlines optimizations for pagespeed (index.html):
 
 ### To run the application 
 + go to [Pagespeed Insights](https://developers.google.com/speed/pagespeed/insights/)
-+ Insert http://aleksandra11.github.io/frontend-nanodegree-mobile-portfolio/ and click analyze button.
++ Copy and paste this url http://aleksandra11.github.io/frontend-nanodegree-mobile-portfolio/ into pagespeed insights and click analyze button.
 
 Part 2. Optimizations for FPS (pizza.html):
 ----------------------------------------------------------------------------------------------------------
