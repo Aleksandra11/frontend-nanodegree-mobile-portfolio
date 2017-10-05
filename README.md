@@ -12,7 +12,7 @@ Part 1. Outlines optimizations for pagespeed (index.html):
 * Changed loading of google font to WebFont loader.
 
 ### To run the application 
-+ go to [Pagespeed Insights](http://https://developers.google.com/speed/pagespeed/insights).
++ go to [Pagespeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 + Insert http://aleksandra11.github.io/frontend-nanodegree-mobile-portfolio/ and click analyze button.
 
 Part 2. Optimizations for FPS (pizza.html):
@@ -30,7 +30,7 @@ The following changes where made to fix the low FPS and produce a consistent 60F
 
 [Gulp](https://www.npmjs.com/package/gulp) to minify css, js and images
 
-Pagespeed Insights [Pagespeed Insights](http://developers.google.com/speed/pagespeed/insights).
+Pagespeed Insights [Pagespeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
 [Udacity](https://www.udacity.com/course/ud884).
 
